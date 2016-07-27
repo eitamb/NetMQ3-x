@@ -38,9 +38,9 @@
     <StartupObject>NetMQ.Tests.NetMQTestRunner</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AsyncIO, Version=0.1.18.0, Culture=neutral, PublicKeyToken=44a94435bd6f33f8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\AsyncIO.0.1.18.0\lib\net40\AsyncIO.dll</HintPath>
+    <Reference Include="AsyncIO, Version=0.1.20.0, Culture=neutral, PublicKeyToken=44a94435bd6f33f8, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsyncIO.0.1.20.0\lib\net40\AsyncIO.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="JetBrains.Annotations">
       <HintPath>..\packages\JetBrains.Annotations.10.0.0\lib\net20\JetBrains.Annotations.dll</HintPath>
@@ -73,6 +73,7 @@
     <Compile Include="ActorTests.cs" />
     <Compile Include="BeaconTests.cs" />
     <Compile Include="ByteArraySegmentTests.cs" />
+    <Compile Include="CleanupTests.cs" />
     <Compile Include="Core\YQueueTests.cs" />
     <Compile Include="EventDelegatorTests.cs" />
     <Compile Include="ExceptionTests.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="NetMQPollerTest.cs" />
     <Compile Include="ReceivingSocketExtensionsTests.cs" />
     <Compile Include="RouterTests.cs" />
+    <Compile Include="Setup.cs" />
     <Compile Include="SocketOptionsTests.cs" />
     <Compile Include="XPubSubTests.cs" />
     <Compile Include="MessageTests.cs" />
